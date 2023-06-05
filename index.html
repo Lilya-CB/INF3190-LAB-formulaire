@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+
+    <h1>Asso des Pro de l'informatique (API)</h1>
+    <p>
+        Bienvenue à l'Association des Professionnels de l'Informatique (API) !<br>
+        L'API est une communauté dynamique et engagée regroupant des experts de l'informatique issus de divers domaines tels que le développement logiciel, la sécurité informatique, les réseaux, le cloud computing, l'intelligence artificielle et bien plus encore. Nous sommes un point de rencontre pour les passionnés de technologie, qu'ils soient développeurs, ingénieurs, architectes, consultants ou entrepreneurs.<br>
+        Notre objectif principal est de promouvoir l'excellence professionnelle dans le domaine de l'informatique et de favoriser l'échange de connaissances et d'expériences entre nos membres. En rejoignant l'API, vous aurez accès à un réseau de professionnels talentueux et motivés, prêts à partager leurs idées, leurs bonnes pratiques et à collaborer sur des projets innovants.<br>
+        Rejoignez l'Association des Professionnels de l'Informatique dès aujourd'hui et faites partie d'une communauté active et influente qui vous aidera à atteindre de nouveaux sommets dans votre carrière. Que vous soyez un débutant passionné ou un expert chevronné, nous sommes convaincus que l'API vous offrira une expérience enrichissante et gratifiante.<br>
+        Pour plus d'informations sur les avantages de l'adhésion et pour rejoindre notre association, visitez notre site web à l'adresse [adresse du site web] ou contactez-nous à [adresse e-mail/contact]. Nous avons hâte de vous accueillir au sein de l'Association des Professionnels de l'Informatique !
+    </p>
+
+    <form class="formulaire" action="" method="post">
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom de famille" required>
+
+        <label for="age">Âge</label>
+        <input type="text" id="age" name="age" placeholder="Votre age" required>
+
+        <label for="annee-diplome">Annee d'obtention</label>
+        <input type="text" id="annee-diplome" name="annee-diplome" placeholder="ex: YYYY" required>
+
+        <label for="etablissement">Établissement</label>
+        <select name="etablissement">
+            <option value="UQAM">UQAM</option>
+            <option value="UdeM">UdeM</option>
+            <option value="Université Laval">Université Laval</option>
+            <option value="Université Sherbrooke">Université Sherbrooke</option>
+            <option value="Concordia University">Concordia University</option>
+            <option value="McGill University">McGill University</option>
+            <option value="Cégep">Cégep</option>
+            <option value="Secondaire">Secondaire</option>
+        </select>
+
+        <label for="programme">Programme</label>
+        <input type="text" id="programme" name="programme" placeholder="ex: Informatique" required>
+
+    
+        <label for="admission">Admission :</label>
+        <br>
+        <label for="regulier">Membre régulier</label>
+        <input type="radio" value="regulier" id="regulier" name="admission">
+        <br>
+        <label for="or">Membre or</label> 
+        <input type="radio" value="or" id="or" name="admission"> 
+        <br>
+        <label for="observateur">Membre observateur</label> 
+        <input type="radio" value="observateur" id="observateur" name="admission"> 
+        <br>
+        <label for="junior">Membre junior</label> 
+        <input type="radio" value="junior" id="junior" name="admission"> 
+        <br>
+        <label for="parcours">Parcours professionnel:</label>
+        <textarea id="parcours" name="parcours" placeholder="Veuillez écrire votre parcours profesionnel ici." rows="8"></textarea>
+            
+        <input type="submit" value="Soumettre">
+    </form>
+
+</body>
