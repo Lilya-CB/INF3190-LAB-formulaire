@@ -20,17 +20,24 @@
 
     <form class="formulaire" action="" method="post">
         <label for="prenom">Prénom</label>
-        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+        <!--NB: Il est possible d'utiliser "maxlenght" pour de la validation, mais par soucis d'uniformité, il est préférable de faire
+        les validations avec Javascript, qu'on vera prochainement-->
+        <input type="text" id="prenom" name="prenom" maxlength="50" placeholder="Votre prénom" required>
 
+        <!--NB: Le placeholder est une information temporaire qui sert à indiquer à l'utilisateur le format ou l'information demandé.
+        placeholder != value -->
         <label for="nom">Nom</label>
-        <input type="text" id="nom" name="nom" placeholder="Votre nom de famille" required>
+        <input type="text" id="nom" name="nom" maxlength="40" placeholder="Votre nom de famille" required>
 
+        <!--NB: Il est possible d'utiliser "required" pour eviter d'avoir des champs vide lors de la soumission du formulaire,
+        comme pour maxlenght, il est préferable de faire cette validation avec JS-->
         <label for="age">Âge</label>
-        <input type="text" id="age" name="age" placeholder="Votre age" required>
+        <input type="text" id="age" name="age" maxlength="2" placeholder="Votre age" required>
 
         <label for="annee-diplome">Annee d'obtention</label>
         <input type="text" id="annee-diplome" name="annee-diplome" placeholder="ex: YYYY" required>
 
+        <!-- Code pour faire une liste déroulante -->
         <label for="etablissement">Établissement</label>
         <select name="etablissement">
             <option value="UQAM">UQAM</option>
@@ -45,8 +52,8 @@
 
         <label for="programme">Programme</label>
         <input type="text" id="programme" name="programme" placeholder="ex: Informatique" required>
-
     
+        <!-- Code pour faire une question de type "radio" NB: Tous les inputs on le même 'name'-->
         <label for="admission">Admission :</label>
         <br>
         <label for="regulier">Membre régulier</label>
@@ -61,6 +68,7 @@
         <label for="junior">Membre junior</label> 
         <input type="radio" value="junior" id="junior" name="admission"> 
         <br>
+        <!-- Code pour faire un champ texte, l'attribut 'rows' est optionnel, mais permet une plus meilleur expérience utilisateur-->
         <label for="parcours">Parcours professionnel:</label>
         <textarea id="parcours" name="parcours" placeholder="Veuillez écrire votre parcours profesionnel ici." rows="8"></textarea>
             
